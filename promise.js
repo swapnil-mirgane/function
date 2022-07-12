@@ -11,3 +11,9 @@ setTimeout(() => {
 
 var a=str.shift();
 console.log(a);
+
+    sw();
+}, 2000);
+
+var a=str.shift();
+console.log(a);
