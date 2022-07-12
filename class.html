@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr=[{name:"swapnil mirgane",age:34},
+        {name:"madhuri dhage ",age:34},
+        {name:"swapnil mirgane",age:34},
+        {name:"swapnil mirgane",age:34},
+        {name:"swapnil mirgane",age:34}];
+        var d=arr.map((ele)=>{
+          var  a=ele.name.split(" ");
+            // console.log(" first name:"+a[0] +" "+"last name:"+a[1]);
+            [firstName,lastName]=ele.name.split(" ");
+            return {firstName,lastName,age:ele.age}
+            
+        })
+        console.log(d);
+
+
+
+
+    
+        // for(i=0;i<d.length;i++){
+        //     document.write(`<b>Frist Name=</b>${d[i].firstName}  <b>LastName</b>=${d[i].lastName} <b>age=</b>${d[i].age} <br>`); }
+
+
+
+    </script>
+</body>
+</html>
