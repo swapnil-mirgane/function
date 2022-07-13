@@ -6,10 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>function </title>
     <script src="./promise.js"></script>
+    <script src="/map.js"></script>
+    <script src="/promise.js"></script>
+    <script src="/filter.js"></script>
 </head>
 <body>
-    <button onclick="each()">foreach loop</button>
-    <button onclick="cle()">clear</button>
+    <div>   <button onclick="each()">foreach loop</button>
+        <button onclick="map()">map function</button>
+        <button onclick="swa()">filter</button>
+
+    </div>
+    <div><button onclick="cle()">clear</button></div>
     <div id="div1">
 
     </div>
@@ -18,13 +25,17 @@
         var div =document.getElementById("div1");
         const each=()=>{
     let arr=["anuj","madhuri","akshay","ganesh","aniket","vaibhav","ram"];
-    let str="swapnilmirgane";
+     let str="swapnilmirgane";
     arr.forEach((ele,i)=>div.innerHTML+=(`${i+1} ${ele} <br>`));
         }
 
 const cle=()=>{
     div.innerHTML="";
 }
+
+var aw=[10,20,30];
+var d=aw.shift();
+console.log(aw);
 </script>
 </body>
 </html>
