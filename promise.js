@@ -1,4 +1,4 @@
- let str=["anuj","pune","barshi"];
+ var str=["anuj","pune","barshi"];
  function sw(){
      str.map((ele)=>{console.log(ele);})
  }
@@ -10,6 +10,7 @@
  }, 2000);
 
  var a=str.shift();
+ 
  console.log(a);
 
  let b=new Promise((resolve,reject)=>{
