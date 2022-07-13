@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     
+       var a=()=>{
+            console.log("bi");
+        }
+        a();
+    function sw(a=5,b=7){
+        console.log(arguments[2]);
+        return(a+b);
+    }
+    console.log(sw(3,8,2));
+    const x=Object.freeze([10,20,30,40]);
+    // x.push("swd");
+
+//coll back
+
+    function show(){
+        console.log("show function");
+    }
+    function dis(callback){
+        console.log("display function");
+        callback();
+    }
+    dis(show);
+
+    
+    
+    var a= new Promise(function(resolve,reject){
+        let count=true;
+        if(!true){
+            resolve("i am swapnil");
+        }else{
+            reject("gatting erro ");
+        }
+    });
+    a.then((res) => {
+        console.log('res: ', res);
+    }).catch((err) => {
+        console.log('err: ', err);
+    });
+
+
+    let g=`${(()=>{
+        console.log("hii")
+    })()
+    }`
+    console.log();
+
+
+
+let w=new Promise((res,rej)=>{
+    let a=true;
+    if(!true){
+        res("promise resolve");
+    }else{
+        rej("promise rejected");
+    }
+})
+
+w.then((res)=>{
+    console.log("promise state" +res);
+}).catch((err)=>{
+    console.log("promise state"+err);
+})
+
+
+
+const sym1 = Symbol();
+const sym2 = Symbol('foo');
+const sym3 = Symbol('foo');
+console.log(sym3);
+
+    </script>
+</body>
+</html>
